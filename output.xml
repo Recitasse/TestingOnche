@@ -1,126 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.12.7 on linux)" generated="2025-02-02T16:37:01.749102" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.12.7 on linux)" generated="2025-02-02T21:55:42.458456" rpa="false" schemaversion="5">
 <suite id="s1" name="410-DATABASE" source="/home/recitasse/Desktop/Onche/TestingOnche/Tests/Test Suites/Database/410-DATABASE.robot">
-<test id="s1-t1" name="41001-REQ-CONNEXION-DATABASE" line="6">
+<test id="s1-t1" name="41001-REQ-CONNEXION-DATABASE" line="5">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-02-02T16:37:01.786111" level="TRACE">Arguments: [ "Connexion à la base de donnée en étant l'utilisateur root" ]</msg>
-<msg time="2025-02-02T16:37:01.786394" level="INFO">Connexion à la base de donnée en étant l'utilisateur root</msg>
-<msg time="2025-02-02T16:37:01.786558" level="TRACE">Return: None</msg>
+<msg time="2025-02-02T21:55:42.498924" level="TRACE">Arguments: [ "Connexion à la base de donnée en étant l'utilisateur root" ]</msg>
+<msg time="2025-02-02T21:55:42.499274" level="INFO">Connexion à la base de donnée en étant l'utilisateur root</msg>
+<msg time="2025-02-02T21:55:42.499462" level="TRACE">Return: None</msg>
 <arg>Connexion à la base de donnée en étant l'utilisateur root</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-02-02T16:37:01.785961" elapsed="0.000639"/>
+<status status="PASS" start="2025-02-02T21:55:42.498769" elapsed="0.000735"/>
 </kw>
-<kw name="Vérifier la connexion à MySQL" owner="database_manager">
-<msg time="2025-02-02T16:37:01.786848" level="TRACE">Arguments: [  ]</msg>
-<msg time="2025-02-02T16:37:01.786892" level="TRACE" html="true">------------------TRACE------------------</msg>
-<msg time="2025-02-02T16:37:01.786918" level="TRACE" html="true">Fonction check_connection</msg>
-<msg time="2025-02-02T16:37:01.786998" level="INFO">
+<kw name="Vérifier la connexion à MySQL" owner="keyword_connexion">
+<msg time="2025-02-02T21:55:42.499766" level="TRACE">Arguments: [  ]</msg>
+<msg time="2025-02-02T21:55:42.499810" level="TRACE" html="true">------------------TRACE------------------</msg>
+<msg time="2025-02-02T21:55:42.499842" level="TRACE" html="true">Fonction check_connection</msg>
+<msg time="2025-02-02T21:55:42.499934" level="INFO">
 
 ===========================
      START NEW SESSION      
 ===========================
 
 </msg>
-<msg time="2025-02-02T16:37:01.790204" level="INFO">
+<msg time="2025-02-02T21:55:42.503783" level="INFO">
 
      °˖✧◝(⁰▿⁰)◜✧˖°     
 
 Connexion à mysql effectuée.
 SESSION HAS STARTED AS root</msg>
-<msg time="2025-02-02T16:37:01.790406" level="TRACE" html="true">La fonction check_connection s'est bien exécuté</msg>
-<msg time="2025-02-02T16:37:01.790447" level="TRACE" html="true">Avec comme résultats : </msg>
-<msg time="2025-02-02T16:37:01.790471" level="TRACE" html="true">True</msg>
-<msg time="2025-02-02T16:37:01.790495" level="TRACE" html="true">------------------TRACE------------------</msg>
-<msg time="2025-02-02T16:37:01.790530" level="TRACE">Return: True</msg>
-<msg time="2025-02-02T16:37:01.790599" level="INFO">${Connexion} = True</msg>
+<msg time="2025-02-02T21:55:42.504009" level="TRACE" html="true">La fonction check_connection s'est bien exécuté</msg>
+<msg time="2025-02-02T21:55:42.504050" level="TRACE" html="true">Avec comme résultats : </msg>
+<msg time="2025-02-02T21:55:42.504074" level="TRACE" html="true">True</msg>
+<msg time="2025-02-02T21:55:42.504099" level="TRACE" html="true">------------------TRACE------------------</msg>
+<msg time="2025-02-02T21:55:42.504134" level="TRACE">Return: True</msg>
+<msg time="2025-02-02T21:55:42.504206" level="INFO">${Connexion} = True</msg>
 <var>${Connexion}</var>
 <doc>Renvoie true si la connection à Mysql est établie
 :return: True sit connection établie</doc>
-<status status="PASS" start="2025-02-02T16:37:01.786746" elapsed="0.003907"/>
+<status status="PASS" start="2025-02-02T21:55:42.499663" elapsed="0.004598"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
-<msg time="2025-02-02T16:37:01.790929" level="TRACE">Arguments: [ True ]</msg>
-<msg time="2025-02-02T16:37:01.790989" level="TRACE">Return: None</msg>
+<msg time="2025-02-02T21:55:42.504566" level="TRACE">Arguments: [ True ]</msg>
+<msg time="2025-02-02T21:55:42.504639" level="TRACE">Return: None</msg>
 <arg>${Connexion}</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2025-02-02T16:37:01.790791" elapsed="0.000231"/>
+<status status="PASS" start="2025-02-02T21:55:42.504418" elapsed="0.000255"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-02-02T16:37:01.791208" level="TRACE">Arguments: [ 'La connexion est réussie' ]</msg>
-<msg time="2025-02-02T16:37:01.791259" level="INFO">La connexion est réussie</msg>
-<msg time="2025-02-02T16:37:01.791312" level="TRACE">Return: None</msg>
+<msg time="2025-02-02T21:55:42.504864" level="TRACE">Arguments: [ 'La connexion est réussie' ]</msg>
+<msg time="2025-02-02T21:55:42.504915" level="INFO">La connexion est réussie</msg>
+<msg time="2025-02-02T21:55:42.504970" level="TRACE">Return: None</msg>
 <arg>La connexion est réussie</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-02-02T16:37:01.791119" elapsed="0.000222"/>
+<status status="PASS" start="2025-02-02T21:55:42.504780" elapsed="0.000219"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-02-02T16:37:01.791513" level="TRACE">Arguments: [ 'Montrer toutes les bases de données concernant Onche' ]</msg>
-<msg time="2025-02-02T16:37:01.791559" level="INFO">Montrer toutes les bases de données concernant Onche</msg>
-<msg time="2025-02-02T16:37:01.791609" level="TRACE">Return: None</msg>
+<msg time="2025-02-02T21:55:42.505178" level="TRACE">Arguments: [ 'Montrer toutes les bases de données concernant Onche' ]</msg>
+<msg time="2025-02-02T21:55:42.505224" level="INFO">Montrer toutes les bases de données concernant Onche</msg>
+<msg time="2025-02-02T21:55:42.505274" level="TRACE">Return: None</msg>
 <arg>Montrer toutes les bases de données concernant Onche</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-02-02T16:37:01.791431" elapsed="0.000206"/>
+<status status="PASS" start="2025-02-02T21:55:42.505096" elapsed="0.000206"/>
 </kw>
-<kw name="Montrer toutes les bases de donnée de Onche" owner="database_manager">
-<msg time="2025-02-02T16:37:01.791899" level="TRACE">Arguments: [  ]</msg>
-<msg time="2025-02-02T16:37:01.791939" level="TRACE" html="true">------------------TRACE------------------</msg>
-<msg time="2025-02-02T16:37:01.791965" level="TRACE" html="true">Fonction show_all_database</msg>
-<msg time="2025-02-02T16:37:01.792009" level="INFO">
+<kw name="Montrer toutes les bases de donnée de Onche" owner="keyword_database">
+<msg time="2025-02-02T21:55:42.505472" level="TRACE">Arguments: [  ]</msg>
+<msg time="2025-02-02T21:55:42.505506" level="TRACE" html="true">------------------TRACE------------------</msg>
+<msg time="2025-02-02T21:55:42.505535" level="TRACE" html="true">Fonction show_all_database</msg>
+<msg time="2025-02-02T21:55:42.505584" level="INFO">
 
 ===========================
      START NEW SESSION      
 ===========================
 
 </msg>
-<msg time="2025-02-02T16:37:01.793364" level="INFO">
+<msg time="2025-02-02T21:55:42.506953" level="INFO">
 
      °˖✧◝(⁰▿⁰)◜✧˖°     
 
 Connexion à mysql effectuée.
 SESSION HAS STARTED AS root</msg>
-<msg time="2025-02-02T16:37:01.793453" level="INFO">SHOW DATABASES;</msg>
-<msg time="2025-02-02T16:37:01.794261" level="INFO" html="true"/>
-<msg time="2025-02-02T16:37:01.794324" level="TRACE" html="true">La fonction show_all_database s'est bien exécuté</msg>
-<msg time="2025-02-02T16:37:01.794351" level="TRACE" html="true">Avec comme résultats : </msg>
-<msg time="2025-02-02T16:37:01.794373" level="TRACE" html="true">['Ciqual', 'Onche', 'information_schema', 'mysql', 'performance_schema', 'sys']</msg>
-<msg time="2025-02-02T16:37:01.794397" level="TRACE" html="true">------------------TRACE------------------</msg>
-<msg time="2025-02-02T16:37:01.794422" level="TRACE">Return: ['Ciqual', 'Onche', 'information_schema', 'mysql', 'performance_schema', 'sys']</msg>
+<msg time="2025-02-02T21:55:42.507081" level="INFO">SHOW DATABASES;</msg>
+<msg time="2025-02-02T21:55:42.508040" level="INFO" html="true"/>
+<msg time="2025-02-02T21:55:42.508113" level="TRACE" html="true">La fonction show_all_database s'est bien exécuté</msg>
+<msg time="2025-02-02T21:55:42.508143" level="TRACE" html="true">Avec comme résultats : </msg>
+<msg time="2025-02-02T21:55:42.508165" level="TRACE" html="true">['Ciqual', 'Onche', 'information_schema', 'mysql', 'performance_schema', 'sys']</msg>
+<msg time="2025-02-02T21:55:42.508188" level="TRACE" html="true">------------------TRACE------------------</msg>
+<msg time="2025-02-02T21:55:42.508219" level="TRACE">Return: ['Ciqual', 'Onche', 'information_schema', 'mysql', 'performance_schema', 'sys']</msg>
 <doc>Retourne toutes les bases de données
 :return: Liste des bases de donnée</doc>
-<status status="PASS" start="2025-02-02T16:37:01.791729" elapsed="0.002731"/>
+<status status="PASS" start="2025-02-02T21:55:42.505397" elapsed="0.002864"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-02-02T16:37:01.794659" level="TRACE">Arguments: [ 'Liste de tous les utilisateurs pour onche' ]</msg>
-<msg time="2025-02-02T16:37:01.794706" level="INFO">Liste de tous les utilisateurs pour onche</msg>
-<msg time="2025-02-02T16:37:01.794758" level="TRACE">Return: None</msg>
+<msg time="2025-02-02T21:55:42.508508" level="TRACE">Arguments: [ 'Liste de tous les utilisateurs pour onche' ]</msg>
+<msg time="2025-02-02T21:55:42.508560" level="INFO">Liste de tous les utilisateurs pour onche</msg>
+<msg time="2025-02-02T21:55:42.508612" level="TRACE">Return: None</msg>
 <arg>Liste de tous les utilisateurs pour onche</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-02-02T16:37:01.794568" elapsed="0.000220"/>
+<status status="PASS" start="2025-02-02T21:55:42.508397" elapsed="0.000251"/>
 </kw>
-<kw name="Montrer tous les utilisateurs MySQL pour Onche" owner="database_manager">
-<msg time="2025-02-02T16:37:01.794952" level="TRACE">Arguments: [  ]</msg>
-<msg time="2025-02-02T16:37:01.794986" level="TRACE" html="true">------------------TRACE------------------</msg>
-<msg time="2025-02-02T16:37:01.795011" level="TRACE" html="true">Fonction show_all_users</msg>
-<msg time="2025-02-02T16:37:01.795053" level="INFO">
+<kw name="Montrer tous les utilisateurs MySQL pour Onche" owner="keyword_user">
+<msg time="2025-02-02T21:55:42.508821" level="TRACE">Arguments: [  ]</msg>
+<msg time="2025-02-02T21:55:42.508859" level="TRACE" html="true">------------------TRACE------------------</msg>
+<msg time="2025-02-02T21:55:42.508882" level="TRACE" html="true">Fonction show_all_users</msg>
+<msg time="2025-02-02T21:55:42.508928" level="INFO">
 
 ===========================
      START NEW SESSION      
 ===========================
 
 </msg>
-<msg time="2025-02-02T16:37:01.796686" level="INFO">
+<msg time="2025-02-02T21:55:42.510376" level="INFO">
 
      °˖✧◝(⁰▿⁰)◜✧˖°     
 
 Connexion à mysql effectuée.
 SESSION HAS STARTED AS root</msg>
-<msg time="2025-02-02T16:37:01.796770" level="INFO">SELECT user FROM mysql.user;</msg>
-<msg time="2025-02-02T16:37:01.797171" level="INFO" html="true">Liste des utilisateurs ['Onchois', 'debian-sys-maint', 'mysql.infoschema', 'mysql.session', 'mysql.sys', 'onche', 'root']</msg>
-<msg time="2025-02-02T16:37:01.797248" level="TRACE" html="true">La fonction show_all_users s'est bien exécuté</msg>
-<msg time="2025-02-02T16:37:01.797274" level="TRACE" html="true">Avec comme résultats : </msg>
-<msg time="2025-02-02T16:37:01.797295" level="TRACE" html="true">['Onchois', 'debian-sys-maint', 'mysql.infoschema', 'mysql.session', 'mysql.sys', 'onche', 'root']</msg>
-<msg time="2025-02-02T16:37:01.797317" level="TRACE" html="true">------------------TRACE------------------</msg>
-<msg time="2025-02-02T16:37:01.797344" level="TRACE">Return: ['Onchois',
+<msg time="2025-02-02T21:55:42.510465" level="INFO">SELECT user FROM mysql.user;</msg>
+<msg time="2025-02-02T21:55:42.511075" level="INFO" html="true">Liste des utilisateurs ['Onchois', 'debian-sys-maint', 'mysql.infoschema', 'mysql.session', 'mysql.sys', 'onche', 'root']</msg>
+<msg time="2025-02-02T21:55:42.511149" level="TRACE" html="true">La fonction show_all_users s'est bien exécuté</msg>
+<msg time="2025-02-02T21:55:42.511175" level="TRACE" html="true">Avec comme résultats : </msg>
+<msg time="2025-02-02T21:55:42.511196" level="TRACE" html="true">['Onchois', 'debian-sys-maint', 'mysql.infoschema', 'mysql.session', 'mysql.sys', 'onche', 'root']</msg>
+<msg time="2025-02-02T21:55:42.511218" level="TRACE" html="true">------------------TRACE------------------</msg>
+<msg time="2025-02-02T21:55:42.511244" level="TRACE">Return: ['Onchois',
  'debian-sys-maint',
  'mysql.infoschema',
  'mysql.session',
@@ -129,87 +129,91 @@ SESSION HAS STARTED AS root</msg>
  'root']</msg>
 <doc>Montre et renvoie tous les utilisateurs
 :return: None</doc>
-<status status="PASS" start="2025-02-02T16:37:01.794879" elapsed="0.002519"/>
+<status status="PASS" start="2025-02-02T21:55:42.508747" elapsed="0.002554"/>
 </kw>
 <doc>Test la connexion à MySQL en étant le root user</doc>
 <tag>Center</tag>
 <tag>Connexion</tag>
 <tag>Database</tag>
-<status status="PASS" start="2025-02-02T16:37:01.785322" elapsed="0.012191"/>
+<status status="PASS" start="2025-02-02T21:55:42.498024" elapsed="0.013391"/>
 </test>
-<test id="s1-t2" name="41002-REQ-MANIPULATION-UTILISATEUR" line="21">
+<test id="s1-t2" name="41002-REQ-MANIPULATION-UTILISATEUR" line="20">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-02-02T16:37:01.798083" level="TRACE">Arguments: [ 'Vérification des opérations sur les utilisateurs' ]</msg>
-<msg time="2025-02-02T16:37:01.798135" level="INFO">Vérification des opérations sur les utilisateurs</msg>
-<msg time="2025-02-02T16:37:01.798196" level="TRACE">Return: None</msg>
+<msg time="2025-02-02T21:55:42.512144" level="TRACE">Arguments: [ 'Vérification des opérations sur les utilisateurs' ]</msg>
+<msg time="2025-02-02T21:55:42.512199" level="INFO">Vérification des opérations sur les utilisateurs</msg>
+<msg time="2025-02-02T21:55:42.512254" level="TRACE">Return: None</msg>
 <arg>Vérification des opérations sur les utilisateurs</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-02-02T16:37:01.797991" elapsed="0.000270"/>
+<status status="PASS" start="2025-02-02T21:55:42.512043" elapsed="0.000293"/>
 </kw>
-<kw name="Montrer tous les utilisateurs MySQL pour Onche" owner="database_manager">
-<msg time="2025-02-02T16:37:01.798436" level="TRACE">Arguments: [  ]</msg>
-<msg time="2025-02-02T16:37:01.798472" level="TRACE" html="true">------------------TRACE------------------</msg>
-<msg time="2025-02-02T16:37:01.798496" level="TRACE" html="true">Fonction show_all_users</msg>
-<msg time="2025-02-02T16:37:01.798538" level="INFO">
+<kw name="Montrer tous les utilisateurs MySQL pour Onche" owner="keyword_user">
+<msg time="2025-02-02T21:55:42.512532" level="TRACE">Arguments: [  ]</msg>
+<msg time="2025-02-02T21:55:42.512571" level="TRACE" html="true">------------------TRACE------------------</msg>
+<msg time="2025-02-02T21:55:42.512597" level="TRACE" html="true">Fonction show_all_users</msg>
+<msg time="2025-02-02T21:55:42.512650" level="INFO">
 
 ===========================
      START NEW SESSION      
 ===========================
 
 </msg>
-<msg time="2025-02-02T16:37:01.800038" level="INFO">
+<msg time="2025-02-02T21:55:42.513947" level="INFO">
 
      °˖✧◝(⁰▿⁰)◜✧˖°     
 
 Connexion à mysql effectuée.
 SESSION HAS STARTED AS root</msg>
-<msg time="2025-02-02T16:37:01.800120" level="INFO">SELECT user FROM mysql.user;</msg>
-<msg time="2025-02-02T16:37:01.800940" level="INFO" html="true">Liste des utilisateurs ['Onchois', 'debian-sys-maint', 'mysql.infoschema', 'mysql.session', 'mysql.sys', 'onche', 'root']</msg>
-<msg time="2025-02-02T16:37:01.801002" level="TRACE" html="true">La fonction show_all_users s'est bien exécuté</msg>
-<msg time="2025-02-02T16:37:01.801026" level="TRACE" html="true">Avec comme résultats : </msg>
-<msg time="2025-02-02T16:37:01.801046" level="TRACE" html="true">['Onchois', 'debian-sys-maint', 'mysql.infoschema', 'mysql.session', 'mysql.sys', 'onche', 'root']</msg>
-<msg time="2025-02-02T16:37:01.801068" level="TRACE" html="true">------------------TRACE------------------</msg>
-<msg time="2025-02-02T16:37:01.801095" level="TRACE">Return: ['Onchois',
+<msg time="2025-02-02T21:55:42.514036" level="INFO">SELECT user FROM mysql.user;</msg>
+<msg time="2025-02-02T21:55:42.514767" level="INFO" html="true">Liste des utilisateurs ['Onchois', 'debian-sys-maint', 'mysql.infoschema', 'mysql.session', 'mysql.sys', 'onche', 'root']</msg>
+<msg time="2025-02-02T21:55:42.514837" level="TRACE" html="true">La fonction show_all_users s'est bien exécuté</msg>
+<msg time="2025-02-02T21:55:42.514864" level="TRACE" html="true">Avec comme résultats : </msg>
+<msg time="2025-02-02T21:55:42.514885" level="TRACE" html="true">['Onchois', 'debian-sys-maint', 'mysql.infoschema', 'mysql.session', 'mysql.sys', 'onche', 'root']</msg>
+<msg time="2025-02-02T21:55:42.514908" level="TRACE" html="true">------------------TRACE------------------</msg>
+<msg time="2025-02-02T21:55:42.514936" level="TRACE">Return: ['Onchois',
  'debian-sys-maint',
  'mysql.infoschema',
  'mysql.session',
  'mysql.sys',
  'onche',
  'root']</msg>
-<msg time="2025-02-02T16:37:01.801174" level="INFO">${users} = ['Onchois', 'debian-sys-maint', 'mysql.infoschema', 'mysql.session', 'mysql.sys', 'onche', 'root']</msg>
+<msg time="2025-02-02T21:55:42.515023" level="INFO">${users} = ['Onchois', 'debian-sys-maint', 'mysql.infoschema', 'mysql.session', 'mysql.sys', 'onche', 'root']</msg>
 <var>${users}</var>
 <doc>Montre et renvoie tous les utilisateurs
 :return: None</doc>
-<status status="PASS" start="2025-02-02T16:37:01.798362" elapsed="0.002870"/>
+<status status="PASS" start="2025-02-02T21:55:42.512454" elapsed="0.002623"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-02-02T16:37:01.801425" level="TRACE">Arguments: [ "Création de l'utilisateur OncheTest" ]</msg>
-<msg time="2025-02-02T16:37:01.801473" level="INFO">Création de l'utilisateur OncheTest</msg>
-<msg time="2025-02-02T16:37:01.801523" level="TRACE">Return: None</msg>
+<msg time="2025-02-02T21:55:42.515313" level="TRACE">Arguments: [ "Création de l'utilisateur OncheTest" ]</msg>
+<msg time="2025-02-02T21:55:42.515376" level="INFO">Création de l'utilisateur OncheTest</msg>
+<msg time="2025-02-02T21:55:42.515430" level="TRACE">Return: None</msg>
 <arg>Création de l'utilisateur OncheTest</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-02-02T16:37:01.801335" elapsed="0.000218"/>
+<status status="PASS" start="2025-02-02T21:55:42.515194" elapsed="0.000268"/>
+</kw>
+<kw name="Créer l'utilisateur OncheTest">
+<msg time="2025-02-02T21:55:42.516182" level="FAIL">No keyword with name 'Créer l'utilisateur OncheTest' found.</msg>
+<status status="FAIL" start="2025-02-02T21:55:42.516110" elapsed="0.000139">No keyword with name 'Créer l'utilisateur OncheTest' found.</status>
 </kw>
 <doc>Test la connexion à MySQL en étant le root user</doc>
 <tag>Center</tag>
 <tag>Database</tag>
 <tag>User</tag>
-<status status="PASS" start="2025-02-02T16:37:01.797698" elapsed="0.003949"/>
+<status status="FAIL" start="2025-02-02T21:55:42.511705" elapsed="0.004683">No keyword with name 'Créer l'utilisateur OncheTest' found.</status>
 </test>
-<status status="PASS" start="2025-02-02T16:37:01.754181" elapsed="0.047729"/>
+<status status="FAIL" start="2025-02-02T21:55:42.463770" elapsed="0.052923"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="2" fail="0" skip="0">Center</stat>
+<stat pass="1" fail="1" skip="0">Center</stat>
 <stat pass="1" fail="0" skip="0">Connexion</stat>
-<stat pass="2" fail="0" skip="0">Database</stat>
-<stat pass="1" fail="0" skip="0">User</stat>
+<stat pass="1" fail="1" skip="0">Database</stat>
+<stat pass="0" fail="1" skip="0">User</stat>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="410-DATABASE">410-DATABASE</stat>
+<stat pass="1" fail="1" skip="0" id="s1" name="410-DATABASE">410-DATABASE</stat>
 </suite>
 </statistics>
 <errors>

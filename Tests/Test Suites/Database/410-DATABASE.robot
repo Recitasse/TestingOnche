@@ -1,6 +1,7 @@
 *** Settings ***
 Resource        ../../../robotframework/resource/database.resource
-
+Resource        ../../../robotframework/keywords_robot/Database/keyword_user.robot
+Resource        ../../../robotframework/keywords_robot/Database/keyword_database.robot
 
 *** Test Cases ***
 41001-REQ-CONNEXION-DATABASE
@@ -23,8 +24,23 @@ Resource        ../../../robotframework/resource/database.resource
     [Tags]              User   Center   Database
     Log                 Vérification des opérations sur les utilisateurs
     ${users}=           Montrer tous les utilisateurs MySQL pour Onche
+    ${OncheUser}=       OncheTest
 
-    Log                 Création de l'utilisateur OncheTest
+    Log                 Création de l'utilisateur ${OncheUser}
+    Créer l'utilisateur ${OncheUser}
+    Vérifier que l'utilisateur ${OncheUser} existe
+
+    Log                 Modification des droits utilisateur
+    Créer la base de donnée de test
+    ${droits}=
+    ${databases}=
+    Ajouter les droits ${droits} à l'utilisateur ${OncheUSer} sur les bases de donnée ${databases}
+    Véri
+
+    Log                 Effacer l'utilisateur ${OncheUser}
+    Effacer l'utilisateur ${OncheUser}
+    Vérifier que l'utilisateur ${OncheUSer} n'existe pas
+
 
 
 
